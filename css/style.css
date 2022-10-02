@@ -1,0 +1,232 @@
+*{
+   font-family: serif; 
+}
+
+header{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/img6.jpeg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.centernav h5{
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: serif;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+ul li{
+  margin: 20px; 
+  font-size: 15px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.5s; 
+}
+
+ul li a{
+    text-decoration: none;
+    color: grey;
+    font-weight: 100;
+}
+
+ul li:hover{
+    border-bottom: 2px solid grey;
+}
+
+.active-nav{
+    color: white;
+}
+
+.content{
+    width: 80%;
+    color: #fff;
+    text-align: center;
+    margin: 100px auto 0;
+
+
+}
+
+.content h1{
+    font-size: 35px;
+    text-transform:  uppercase;
+}
+
+.content h5{
+    width: 80%;
+    margin: 20px auto 50px;
+    font-weight: 100;
+    line-height: 25px;
+    
+}
+
+/* .header-button button, .clearfix button, .login-button*/ button{ 
+    width: 170px;
+    padding: 8px 0;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 20px;
+    font-weight: 100;
+    border: 2px solid rgb(45, 127, 155);
+    background: rgb(45, 127, 155);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.4s;
+}
+ 
+button:hover{
+    background: transparent;
+    border: 2px solid rgb(45, 127, 155);
+}
+
+.btn{
+    background: transparent;
+    border: 2px solid rgb(45, 127, 155);
+}
+
+.btn:hover{
+    background: rgb(45, 127, 155);
+    border: 2px solid rgb(45, 127, 155);
+}
+
+ input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none; 
+  background: #fff;
+}
+.password{
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.register-content, .login-content {
+  padding: 16px;
+  color: #f1f1f1;
+}
+
+.register-content h1, p{
+  text-align: center;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%; 
+  height: 90%; 
+  overflow: auto; /* Enable scroll if needed */
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/img3.jpeg);
+  padding-top: 50px;
+  box-sizing: border-box;
+  
+}
+
+.register-container{
+    background: transparent;
+    margin: 0 auto 30px;
+    border: 1px solid #888;
+    width:80%;
+    
+}
+
+
+.close{
+  position: absolute;
+  right: 80px;
+  top: 40px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white ;
+  cursor: pointer;
+}
+
+.close1{
+  margin-right: -40px;
+
+}
+
+.signin{
+  margin-top: 30px;
+  margin-left: 70px;
+  font-size: 18px;
+}
+
+.login-container{
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #f1f1f1;
+}
+
+.login-content{
+  margin: 40px 20px;
+
+}
+
+.login-content h1{
+  text-align: center;
+}
+.submit{
+  margin-left: 50px;
+  width: 80%;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.login-button{
+  margin-bottom: 30px;
+}
+
+span[class=psw]{
+  float: right;
+  color: #888;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+span a, .signin a{
+  color: rgb(5, 5, 233);
+}
+ 
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+.error{
+  color: #a94442;
+  padding: 10px;
+  width: 50%;
+  border-radius: 5px;
+  margin: 0px auto;
+}
